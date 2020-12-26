@@ -1,7 +1,6 @@
 import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
-import timelineData from '../data/timeline.json';
 
 const TimelineEvent = (props) => {
   return (
