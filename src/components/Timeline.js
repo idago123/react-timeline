@@ -5,8 +5,17 @@ import timelineData from '../data/timeline.json';
 import Timestamp from './Timestamp';
 
 const Timeline = (props) => {
-  console.log(props)
-  const timeComponents = props.events.map((item, index) => <TimelineEvent key={index} event={item} />)
+  console.log(props.events)
+ 
+  // const timeComponents = props.events.map((item, index) =>  {
+  // if (props === null) {
+  //   return props;
+  // } else {
+  //   return <TimelineEvent key={index} event={item} />;
+  // })
+
+  const timeComponents = props.events.map((item, index) => <TimelineEvent key={index} person = {item.person} 
+    status = {item.status} timeStamp = {item.timeStamp} />)
 // console.log(timeComponents)
   return (
     <div>  

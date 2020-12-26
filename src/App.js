@@ -18,7 +18,8 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-        <h1> <Timeline /></h1>
+        < Timeline events = {timelineData.events} />
+        {/* <h1> <Timeline /></h1> */}
         {/* <h2> <TimelineEvent person = "ida" status = "pending" timeStamp = "test"/></h2> */}
       </main>
     </div>
